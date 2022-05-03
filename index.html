@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="data">
+        <span class="hours">00</span> :
+        <span class="minutes">00</span>
+    </div>
+    <header>
+        <a class="author-max" href="https://github.com/isaqov1110" target="_blank">
+            <h1 class="author">Make Todo List using Javascript With <span> <img class="github" src="images/github.svg"
+            alt="link"> </span> Lazizbek Isaqov
+            </h1>
+        </a>
+        <a class="author-min" href="https://github.com/isaqov1110" target="_blank">
+            <h1 class="author"><span> <img class="github" src="images/github.svg"
+            alt="link"> </span> Lazizbek Isaqov
+            </h1>
+        </a>
+    </header>
+    <div class="container">
+        <div class="form-container">
+            <form class="form" action="">
+                <input class="input" type="text" placeholder="Todo List..." maxlength="30">
+                <button class="submit">
+                    <div>ADD <span class="add-btn"><svg xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.5 38V25.5H10V22.5H22.5V10H25.5V22.5H38V25.5H25.5V38Z" />
+                            </svg></span></div>
+                </button>
+            </form>
+
+        </div>
+        <select class="select" name="" id="">
+            <option selected value="0">DELETED LISTS...</option>
+        </select>
+        <ul class="list">
+            <!-- <li class="list-item">
+                <div class="item-text">reading book</div>
+                <div>
+                    <button class="done-btn">DONE <span><i class="fa-solid fa-circle-check"></i></span></button>
+                    <button class="delete-btn">DEL <span><i class="fa-solid fa-trash-can"></i></span></button>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+@font-face {
+    font-family: 'Oleo Script Swash Caps';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local(''),
+        url('../fonts/oleo-script-swash-caps-v11-latin-700.woff2') format('woff2'),
+        url('../fonts/oleo-script-swash-caps-v11-latin-700.woff') format('woff');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: .4s;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      background: red;
+      border-radius: 10px;
+    }
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(167, 7, 7)
+    }
+*:focus{
+    outline: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+li{
+    list-style: none;
+}
+html{
+    font-size: 10px;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(0, 255, 0, 0.4), rgba(77, 255, 0, 0.8)), url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.data{
+    position: fixed;
+    left: 2rem;
+    top: 10rem;
+    font-size: 4rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+header{
+    padding: 1rem 0;
+    background: linear-gradient(to left, rgba(255, 0, 0, 0.7), rgba(0, 128, 0, 0.7), rgba(255, 215, 0, 0.7), rgba(0, 0, 255, 0.7));
+    backdrop-filter: blur(5px);
+}
+.author{
+    color: #0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 0.6rem;
+    font-family: 'Oleo Script Swash Caps', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    text-shadow: 2px 2px red;
+}
+.author-min{
+    display: none;
+}
+.github{
+    width: 4rem;
+    height: 4rem;
+    margin: 0 0.6rem;
+    border: 2px solid red;
+    border-radius: 50%;
+}
+.container{
+    width:  70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.form-container{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),  url('images/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 40% center;
+    padding: 2rem 0;
+    border-radius: 0 0 1.2rem 1.2rem;
+    text-align: center;
+}
+.input{
+    width: 65%;
+    border: none;
+    background: transparent;
+    border-bottom: 0.2rem solid red;
+    font-size: 3.5rem;
+    padding: 1rem;
+    outline: none;
+    color: #fff;
+    margin-right: 2.5rem;
+}
+.input::placeholder{
+    color: red;
+}
+.submit{
+    padding: 0.8rem 1.2rem;
+    border: 0.5px solid #fff;
+    font-size: 2rem;
+    color: #fff;
+    border-radius: 50% 0 50% 0;
+    background-color: rgb(0, 255, 0);
+    cursor: pointer;
+} 
+.submit:hover{
+    opacity: 0.8;
+}
+.submit:active{
+    opacity: 0.6;
+}
+.submit div{
+    display: flex;
+    align-items: center;
+}
+.submit div span svg{
+    width: 40px;
+    height:40px;
+}
+.add-btn svg path{
+    fill: #fff;
+}
+.select{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+    padding: 0.8rem 2rem;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 0.8rem;
+    font-size: 2.2rem;
+}
+.list{
+    background-color: rgba(0, 255, 255, 0.2);
+    padding: 2rem;
+    backdrop-filter: blur(5px);
+    border-radius: 0.8rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 1.8rem;
+    box-shadow: 0px 0px 20px 10px #0ff;
+    border: 0.5px solid #0ff;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+.list-item{
+    width: 100%;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding: 8px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0.5px solid #fff;
+    color: red;
+    text-transform: capitalize;
+}
+.done-btn, .delete-btn{
+    padding: 8px 12px;
+    border: none;
+    font-size: 18px;
+    border-radius: 4px;
+}
+.done-btn{
+    color: rgb(0, 255, 0);
+    background: #fff;
+}
+.delete-btn{
+    color: red;
+    background: #000;
+    margin-left: 8px;
+}
+.fa-solid{
+    pointer-events: none;
+}
+.done-lists{
+    text-decoration: line-through;
+    opacity: 0.4;
+    color: rgb(43, 255, 0);
+    border: 0.5px solid red;
+    background: green;
+}
+
+
+
+
+/* ===== MEDIA ===== */
+@media(max-width:1010px){
+    .author{
+        word-spacing: 0.4rem;
+        font-size: 3rem;
+
+    }
+    .data{
+        left: 0.6rem;
+        top: 7rem;
+        font-size: 2.3rem;
+    }
+    .container{
+        width:  75%;
+    }
+    .form-container{
+        padding: 1.5rem 0;
+    }
+    .input{
+        width: 65%;
+        font-size: 3.5rem;
+        padding: 1rem;
+        margin-right: 2.5rem;
+    }
+    .submit{
+        padding: 0.8rem 1.2rem;
+        font-size: 1.8rem;
+        border-radius: 50% 0 50% 0;
+    }
+}
+@media(max-width:770px){
+    .author{
+        font-size: 2rem;
+    }
+    .container{
+        width: 80%;
+    }
+    .form-container{
+        padding: 1.4rem 0;
+    }
+    .input{
+        width: 70%;
+        font-size: 3.5rem;
+        padding: 1rem;
+        margin-right: 2.5rem;
+    }
+    .submit{
+        padding: 0.5rem 1rem;
+        font-size: 1.6rem;
+        border-radius: 8px;
+    }
+}
+@media(max-width:650px){
+    .data{
+        display: none;
+    }
+    .container{
+        width:  95%;
+    }
+}
+@media(max-width:550px){
+    .author{
+        font-size: 4rem;
+        text-align: center;
+    }
+    .author-max{
+        display: none;
+    }
+    .author-min{
+        display: block;
+    }
+    .container{
+        width:  100%;
+    }
+    .form-container{
+        padding: 1rem 0;
+    }
+    .input{
+        width: 90%;
+        font-size: 3.5rem;
+        padding: 1rem;
+        margin-right: 0px;
+    }
+    .submit{
+        padding: 0.5rem 1rem;
+        font-size: 1.6rem;
+        border-radius: 8px;
+        margin-top: 20px;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}  
