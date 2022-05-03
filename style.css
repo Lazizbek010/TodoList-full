@@ -179,6 +179,12 @@ header{
     border: 0.5px solid #fff;
     color: red;
     text-transform: capitalize;
+    word-break: break-all;
+}
+.buttons-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .done-btn, .delete-btn{
     padding: 8px 12px;

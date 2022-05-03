@@ -31,6 +31,7 @@ form.addEventListener('submit', (e)=>{
         textDiv.textContent = inputValue
         li.appendChild(textDiv)
         let buttonsDiv = document.createElement('div')
+        buttonsDiv.classList.add('buttons-div')
         li.appendChild(buttonsDiv)
         // DoneBtn
         let doneBtn = document.createElement('button')
